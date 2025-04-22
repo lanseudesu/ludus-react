@@ -8,14 +8,9 @@
   </head>
   <body>
     <div id="root"></div>
-    
-    <!-- React entry point -->
     <script type="module" src="/src/main.jsx"></script>
-
-    <!-- Eel script from public/ -->
     <script src="/eel.js"></script>
 
-    <!-- Optional: global JS-Eel function -->
     <script>
       async function callPythonFromJS() {
         await eel.say_hello("React User")();

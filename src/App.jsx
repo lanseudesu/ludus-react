@@ -1,4 +1,3 @@
-import { useState } from 'react';// Import Monaco Editor
 import Editor from './components/code-editor';
 import './App.css';
 

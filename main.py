@@ -1,6 +1,6 @@
 import eel
 
-eel.init('dist')  # or 'build' if you renamed it
+eel.init('dist')  
 @eel.expose
 def say_hello(name):
     print(f"Hello from JS, {name}!")
