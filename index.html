@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- React entry point -->
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Eel script from public/ -->
+    <script src="/eel.js"></script>
+
+    <!-- Optional: global JS-Eel function -->
+    <script>
+      async function callPythonFromJS() {
+        await eel.say_hello("React User")();
+      }
+    </script>
+  </body>
+</html>
